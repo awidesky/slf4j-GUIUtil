@@ -77,7 +77,7 @@ public class GUIUtilLoggerAdaptor extends org.slf4j.helpers.AbstractLogger {
 			Throwable throwable) {
 		sl.info(messagePattern, arguments);
 		if(throwable != null) sl.info(throwable);
-		logger.logInLevel(toGUIUtilLevel(level), sl.getString());
+		logger.logInLevel(toGUIUtilLevel(level), sl.getString().stripTrailing());
 	}
 
 	private io.github.awidesky.guiUtil.level.Level toGUIUtilLevel(Level level) {

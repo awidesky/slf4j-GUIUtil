@@ -10,7 +10,7 @@ public class GUIUtilLoggerFactory implements ILoggerFactory {
 	@Override
 	public Logger getLogger(String name) {
 		io.github.awidesky.guiUtil.Logger logger = new SimpleLogger(System.out);
-		logger.setPrefix(" [" + name + "] ");
+		logger.setPrefix("[" + name + "] ");
 		return new GUIUtilLoggerAdaptor(logger);
 	}
 	

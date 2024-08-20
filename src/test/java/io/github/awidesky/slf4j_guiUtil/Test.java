@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 
 class Test {
 
-
 	@org.junit.jupiter.api.Test
 	void test() {
 		Logger logger = LoggerFactory.getLogger(Test.class);
