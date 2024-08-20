@@ -3,7 +3,7 @@ package io.github.awidesky.slf4j_guiUtil;
 import org.slf4j.Marker;
 import org.slf4j.event.Level;
 
-import io.github.awidesky.guiUtil.StringLogger;
+import io.github.awidesky.guiUtil.simple.StringLogger;
 
 public class GUIUtilLoggerAdaptor extends org.slf4j.helpers.AbstractLogger {
 
@@ -95,6 +95,5 @@ public class GUIUtilLoggerAdaptor extends org.slf4j.helpers.AbstractLogger {
 		}
 		return io.github.awidesky.guiUtil.level.Level.FATAL;
 	}
-
 
 }

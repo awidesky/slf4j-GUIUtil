@@ -3,13 +3,13 @@ package io.github.awidesky.slf4j_guiUtil;
 import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 
-import io.github.awidesky.guiUtil.SimpleLogger;
+import io.github.awidesky.guiUtil.simple.ConsoleLogger;
 
 public class GUIUtilLoggerFactory implements ILoggerFactory {
 
 	@Override
 	public Logger getLogger(String name) {
-		io.github.awidesky.guiUtil.Logger logger = new SimpleLogger(System.out);
+		io.github.awidesky.guiUtil.Logger logger = new ConsoleLogger();
 		logger.setPrefix("[" + name + "] ");
 		return new GUIUtilLoggerAdaptor(logger);
 	}
